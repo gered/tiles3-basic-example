@@ -1,0 +1,14 @@
+{
+	"textureAtlas": "terrain.atlas.json",
+	"tiles": [
+		"grass.tilemesh",
+		"dirt_grass_top.tilemesh",
+		"dirt.tilemesh",
+		"leaves.tilemesh",
+		"trunk.tilemesh",
+		"planks.tilemesh",
+		"bricks.tilemesh",
+		"stone_floor.tilemesh",
+		"sand.tilemesh"
+    ]
+}

@@ -1,0 +1,40 @@
+buildscript {
+    repositories { mavenCentral() }
+}
+
+allprojects {
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+    
+    version = "0.1"
+    ext.appName = "Tiles³ Basic Example"
+    ext.gdxVersion = "1.0.0"
+    
+    repositories {
+        mavenCentral()
+        maven { url "http://oss.sonatype.org/content/repositories/releases/" }
+        maven { url "http://maven.blarg.ca" }
+        mavenLocal();
+    }
+}
+
+project(":core") {
+    apply plugin: "java"
+    
+    dependencies {
+        compile "com.badlogicgames.gdx:gdx:$gdxVersion"
+        compile "ca.blarg.gdx:gdx-toolbox:0.1-SNAPSHOT"
+        compile "ca.blarg.gdx:gdx-tilemap3d:0.1-SNAPSHOT"
+    }
+}
+
+project(":desktop") {
+    apply plugin: "java"
+    
+    dependencies {
+        compile project(":core")
+        compile "com.badlogicgames.gdx:gdx-backend-lwjgl:$gdxVersion"
+        compile "com.badlogicgames.gdx:gdx-platform:$gdxVersion:natives-desktop"
+        compile "com.badlogicgames.gdx:gdx-freetype-platform:$gdxVersion:natives-desktop"
+    }
+}

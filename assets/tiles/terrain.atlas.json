@@ -1,0 +1,6 @@
+{
+	"texture": "terrain.png",
+	"tiles": [
+		{"autogrid": true, "numTilesX": 8, "numTilesY": 8, "tileWidth": 8, "tileHeight": 8},
+	]
+}

@@ -1,0 +1,6 @@
+{
+	"texture": "player.png",
+	"tiles": [
+		{"autogrid": true, "numTilesX": 8, "numTilesY": 8, "tileWidth": 16, "tileHeight": 16},
+	]
+}

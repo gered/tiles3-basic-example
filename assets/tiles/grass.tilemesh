@@ -1,0 +1,7 @@
+{
+	"textureAtlas": "terrain.atlas.json",
+    "cube": true,
+    "texture": 0,
+    "faces": ["ALL"],
+    "opaqueSides": ["ALL"]
+}
