@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>ca.blarg.tiles3</groupId>
+	<artifactId>basic-example-parent</artifactId>
+	<version>0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+
+		<gdx.version>1.0.0</gdx.version>
+		<gdx-toolbox.version>0.1-SNAPSHOT</gdx-toolbox.version>
+		<gdx-tilemap3d.version>0.1-SNAPSHOT</gdx-tilemap3d.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.badlogicgames.gdx</groupId>
+				<artifactId>gdx</artifactId>
+				<version>${gdx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.badlogicgames.gdx</groupId>
+				<artifactId>gdx-backend-lwjgl</artifactId>
+				<version>${gdx.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.badlogicgames.gdx</groupId>
+				<artifactId>gdx-platform</artifactId>
+				<version>${gdx.version}</version>
+				<classifier>natives-desktop</classifier>
+			</dependency>
+			<dependency>
+				<groupId>com.badlogicgames.gdx</groupId>
+				<artifactId>gdx-freetype-platform</artifactId>
+				<version>${gdx.version}</version>
+				<classifier>natives-desktop</classifier>
+			</dependency>
+			<dependency>
+				<groupId>ca.blarg.gdx</groupId>
+				<artifactId>gdx-toolbox</artifactId>
+				<version>${gdx-toolbox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ca.blarg.gdx</groupId>
+				<artifactId>gdx-tilemap3d</artifactId>
+				<version>${gdx-tilemap3d.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<modules>
+		<module>basic-example-core</module>
+		<module>basic-example-desktop</module>
+	</modules>
+
+</project>

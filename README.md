@@ -11,7 +11,7 @@ show cases a complete but very, very simple application that makes use of:
 This basic example is nothing more then a boring walk-around demo. Nothing too
 exciting as you would expect from something called a "basic example."
 
-![Screenshot 2](screenshot.png)
+![Screenshot](screenshot.png)
 
 ## What is the "Tiles³ Framework"?
 
@@ -28,11 +28,15 @@ customize this, assuming it even meets your needs at all!
 
 ## Running
 
-You will need Gradle. Clone the repository and then from a terminal:
+Load the project in your IDE of choice, build the entire project and run it via the main class 
+`ca.blarg.tiles3.basicexample.desktop.DesktopStarter` found in the "basic-example-desktop" module.
 
-	$ gradle desktop:run
-	
-And it should download the project dependencies, build and then run.
+Additionally, the "basic-example-desktop" module's Maven build also results in a runnable "uber JAR". You can build
+and run this via something like
+
+    $ cd /path/to/tiles3-basic-example
+    $ mvn package
+    $ java -jar basic-example-desktop/target/basic-example-desktop-0.1-SNAPSHOT-uberjar.jar
 
 ## TODO
 
