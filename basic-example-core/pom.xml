@@ -23,11 +23,11 @@
 			<artifactId>gdx</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>ca.blarg.gdx</groupId>
+			<groupId>ca.blarg</groupId>
 			<artifactId>gdx-toolbox</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>ca.blarg.gdx</groupId>
+			<groupId>ca.blarg</groupId>
 			<artifactId>gdx-tilemap3d</artifactId>
 		</dependency>
 	</dependencies>
