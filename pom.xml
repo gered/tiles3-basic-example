@@ -13,9 +13,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-		<gdx.version>1.0.0</gdx.version>
-		<gdx-toolbox.version>0.1</gdx-toolbox.version>
-		<gdx-tilemap3d.version>0.1</gdx-tilemap3d.version>
+		<gdx.version>1.7.0</gdx.version>
+		<gdx-toolbox.version>0.2-SNAPSHOT</gdx-toolbox.version>
+		<gdx-tilemap3d.version>0.2-SNAPSHOT</gdx-tilemap3d.version>
 	</properties>
 
 	<dependencyManagement>
